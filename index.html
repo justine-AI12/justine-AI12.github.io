@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio de [Prénom Nom] - Développeur Full Stack spécialisé en [technologies]">
+    
+    <!-- Open Graph / Twitter -->
+    <meta property="og:title" content="Portfolio de [Prénom Nom]">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://votredomaine.com/images/og-image.jpg">
+    
+    <title>[Prénom Nom] - Portfolio Développeur</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="preload" href="fonts/Inter.woff2" as="font" type="font/woff2" crossorigin>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav aria-label="Navigation principale">
+        <a href="#hero" class="logo">//PN//</a>
+        <button class="menu-toggle" aria-label="Menu mobile">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <ul class="nav-links">
+            <li><a href="#projects">Projets</a></li>
+            <li><a href="#skills">Compétences</a></li>
+            <li><a href="#about">À propos</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Section Hero -->
+    <header id="hero" class="section">
+        <div class="hero-content">
+            <p class="hero-subtitle">Développeur Full Stack</p>
+            <h1>Je transforme des idées en <span class="highlight">solutions numériques</span></h1>
+            <div class="cta-container">
+                <a href="#contact" class="cta-button">Me contacter</a>
+                <a href="#projects" class="cta-button secondary">Voir mes projets</a>
+            </div>
+        </div>
+        <div class="hero-illustration" aria-hidden="true">
+            <!-- SVG ou image décorative -->
+        </div>
+    </header>
+
+    <!-- Section Projets -->
+    <section id="projects" class="section" aria-labelledby="projects-heading">
+        <div class="section-header">
+            <h2 id="projects-heading">Projets récents</h2>
+            <p class="section-subtitle">Explorez mes réalisations techniques</p>
+        </div>
+
+        <div class="projects-grid">
+            <!-- Projet 1 -->
+            <article class="project-card">
+                <div class="project-image">
+                    <img src="images/project1.jpg" alt="Capture d'écran du projet [Nom]" loading="lazy">
+                </div>
+                <div class="project-info">
+                    <h3>Application de Gestion de Tâches</h3>
+                    <div class="tech-stack">
+                        <span>React</span>
+                        <span>Node.js</span>
+                        <span>MongoDB</span>
+                    </div>
+                    <p>Plateforme collaborative de gestion de projets avec authentification JWT et notifications en temps réel.</p>
+                    <div class="project-links">
+                        <a href="#" class="link-button" target="_blank" rel="noopener">Code source</a>
+                        <a href="#" class="link-button secondary">Démo</a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Ajouter d'autres projets de la même manière -->
+        </div>
+    </section>
+
+    <!-- Section Compétences -->
+    <section id="skills" class="section" aria-labelledby="skills-heading">
+        <div class="section-header">
+            <h2 id="skills-heading">Expertise Technique</h2>
+            <p class="section-subtitle">Outils et technologies maîtrisés</p>
+        </div>
+
+        <div class="skills-container">
+            <div class="skill-category">
+                <h3>Frontend</h3>
+                <ul class="skill-list">
+                    <li>React/Redux</li>
+                    <li>TypeScript</li>
+                    <li>Tailwind CSS</li>
+                </ul>
+            </div>
+
+            <div class="skill-category">
+                <h3>Backend</h3>
+                <ul class="skill-list">
+                    <li>Node.js</li>
+                    <li>Python/Django</li>
+                    <li>GraphQL</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Contact -->
+    <section id="contact" class="section" aria-labelledby="contact-heading">
+        <div class="section-header">
+            <h2 id="contact-heading">Travaillons ensemble</h2>
+            <p class="section-subtitle">Disponible pour de nouvelles opportunités</p>
+        </div>
+
+        <form class="contact-form" action="https://formspree.io/f/[votre-id]" method="POST">
+            <div class="form-group">
+                <label for="name">Nom complet</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="_replyto" required>
+            </div>
+
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+
+            <button type="submit" class="cta-button">Envoyer le message</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="social-links">
+            <a href="[github-url]" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                <svg><!-- Icône SVG --></svg>
+            </a>
+            <a href="[linkedin-url]" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                <svg><!-- Icône SVG --></svg>
+            </a>
+        </div>
+        <p class="copyright">&copy; 2023 [Prénom Nom]. Tous droits réservés.</p>
+    </footer>
+
+    <script src="js/main.js" defer></script>
+</body>
+</html>
